@@ -1,0 +1,3 @@
+C:\Users\mseon\avaj-launcher\com\simulator\Simulator.java
+C:\Users\mseon\avaj-launcher\com\simulator\entities\Coordinates.java
+C:\Users\mseon\avaj-launcher\com\simulator\entities\WeatherProvider.java
