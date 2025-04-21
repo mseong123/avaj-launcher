@@ -1,4 +1,4 @@
-package com.simulator.entities;
+package com.simulator;
 
 enum WeatherType {
     RAIN, FOG, SUN, SNOW
@@ -22,8 +22,7 @@ public class WeatherProvider {
         + (p_coordinates.getHeight() * 7)) % 100;
     }
 
-    public String getCurrentWeather() {
-        Coordinates p_coordinates = new Coordinates(3,600,5);
+    public String getCurrentWeather(Coordinates p_coordinates) {
         int score = this.calculateScore(p_coordinates);
         if (score >= 0 && score < 25) 
             return WeatherType.SUN.toString();

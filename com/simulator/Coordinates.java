@@ -1,4 +1,4 @@
-package com.simulator.entities;
+package com.simulator;
 
 public class Coordinates {
     private int longitude;
