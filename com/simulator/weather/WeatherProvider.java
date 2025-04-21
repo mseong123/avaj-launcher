@@ -1,4 +1,6 @@
-package com.simulator;
+package com.simulator.weather;
+
+import com.simulator.Coordinates;
 
 enum WeatherType {
     RAIN, FOG, SUN, SNOW

@@ -1,8 +1,7 @@
 
 package com.simulator; 
 
-import com.simulator.WeatherProvider;
-import com.simulator.Coordinates;
+import com.simulator.weather.WeatherProvider;
 
 public class Simulator {
     public static void main(String[] args) {
