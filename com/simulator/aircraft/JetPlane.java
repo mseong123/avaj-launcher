@@ -1,10 +1,34 @@
 package com.simulator.aircraft;
 
-import com.simulator.aircraft.Aircraft;
-import com.simulator.Coordinates;
 
 public class JetPlane extends Aircraft {
-    public JetPlane(long p_id, String p_name, Coordinates p_coordinates) {
-        super(p_id, p_name, p_coordinates);
+    public JetPlane(long p_id, String p_name, String p_type, Coordinates p_coordinates) {
+        super(p_id, p_name, p_type, p_coordinates);
     }
+    public void updateConditions() {
+        //error here, need to register tower first
+        String weather = this.tower.getWeather(this.coordinates);
+        if (weather == "SUN") {
+            this.coordinates.setLatitude(10);
+            this.coordinates.setHeight(2);
+            System.out.println(this.type + this.name + "(" + this.ID + "): SUN!");
+        }
+        else if (weather == "RAIN") {
+            this.coordinates.setLatitude(5);
+            System.out.println(this.type + this.name + "(" + this.ID + "): RAIN!");
+        }
+        else if (weather == "FOG") {
+            this.coordinates.setLatitude(1);
+            System.out.println(this.type + this.name + "(" + this.ID + "): FOG!");
+        }
+        else if (weather == "SNOW") {
+            this.coordinates.setHeight(12);
+            System.out.println(this.type + this.name + "(" + this.ID + ") SNOW!");
+        }
+        if (this.coordinates.getHeight() == 0) {
+            System.out.println(this.type + this.name + "(" + this.ID + ") landing.");
+            this.tower.unregister(this);
+        }
+    }
+
 }
