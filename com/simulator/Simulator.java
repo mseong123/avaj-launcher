@@ -5,13 +5,21 @@ package com.simulator;
 import java.io.*;
 import java.io.IOException;
 
+import com.simulator.aircraft.*;
+import com.simulator.tower.WeatherTower;
+
 public class Simulator {
     public static void main(String[] args) {
-        // Coordinates coordinates = new Coordinates(600,5,299); 
-        // WeatherProvider weatherprovider = WeatherProvider.getInstance();
-        // String weather = weatherprovider.getCurrentWeather(coordinates);
-        // System.out.println(weather);
-        int simulationCount;
+        int simulationCount = 0;
+        AircraftFactory factory = AircraftFactory.getInstance();
+        WeatherTower tower = new WeatherTower();
+
+        //error checking of args
+        if (args.length != 1) {
+            throw new IllegalArgumentException(); 
+        }
+
+        //parse file and instantialize classes
         try(BufferedReader reader = new BufferedReader(new FileReader("scenario.txt"))) {
             String line;
             int lineCount = 0;
@@ -19,14 +27,28 @@ public class Simulator {
                 if (lineCount++ == 0) 
                     simulationCount = Integer.parseInt(line);
                 else {
-                   String[] arr = line.split("[\\s]");
-                   for (String s : arr)
-                        System.out.println(s);
+                    String[] splitLine = line.split("[\\s]");
+                    Flyable aircraft = factory.newAirCraft(
+                        splitLine[0], 
+                        splitLine[1], 
+                        new Coordinates(Integer.parseInt(splitLine[2]), Integer.parseInt(splitLine[3]), Integer.parseInt(splitLine[4]))
+                        );
+                    aircraft.registerTower(tower);
+                    tower.register(aircraft);
+
                 }
             }
         } catch (IOException e) {
             System.err.println(e.getMessage());
             System.exit(1);
+        } catch (Exception e) {
+            System.err.println("Some other error occured: " + e.getMessage());
+            System.exit(1);
+        }
+        //run simulation
+        for (int i = 0; i < simulationCount; i++) {
+            //single entry point
+            tower.changeWeather();
         }
         
 

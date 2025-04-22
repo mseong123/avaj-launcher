@@ -1,5 +1,7 @@
 package com.simulator.aircraft;
 
+import com.simulator.Coordinates;
+
 public class Helicopter extends Aircraft {
     public Helicopter(long p_id, String p_name, String p_type, Coordinates p_coordinates) {
         super(p_id, p_name, p_type, p_coordinates);
@@ -11,22 +13,22 @@ public class Helicopter extends Aircraft {
         if (weather == "SUN") {
             this.coordinates.setLongitude(10);
             this.coordinates.setHeight(2);
-            System.out.println(this.type + this.name + "(" + this.ID + "): SUN!");
+            System.out.println(this.type + "#" + this.name + "(" + this.id + "): SUN!");
         }
         else if (weather == "RAIN") {
             this.coordinates.setLongitude(5);
-            System.out.println(this.type + this.name + "(" + this.ID + "): RAIN!");
+            System.out.println(this.type + "#" + this.name + "(" + this.id + "): RAIN!");
         }
         else if (weather == "FOG") {
             this.coordinates.setLongitude(1);
-            System.out.println(this.type + this.name + "(" + this.ID + "): FOG!");
+            System.out.println(this.type + "#" + this.name + "(" + this.id + "): FOG!");
         }
         else if (weather == "SNOW") {
-            this.coordinates.setHeight(12);
-            System.out.println(this.type + this.name + "(" + this.ID + ") SNOW!");
+            this.coordinates.setHeight(-12);
+            System.out.println(this.type + "#" + this.name + "(" + this.id + ") SNOW!");
         }
         if (this.coordinates.getHeight() == 0) {
-            System.out.println(this.type + this.name + "(" + this.ID + ") landing.");
+            System.out.println(this.type + "#" + this.name + "(" + this.id + ") landing.");
             this.tower.unregister(this);
         }
     }

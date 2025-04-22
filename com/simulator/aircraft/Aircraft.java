@@ -2,17 +2,20 @@ package com.simulator.aircraft;
 
 import com.simulator.Coordinates;
 
-public class Aircraft extends Flayable {
+public class Aircraft extends Flyable {
     protected long id;
     protected String name;
     protected String type;
     protected Coordinates coordinates;
 
-    protected Aircraft(long p_id, String p_name, String p_type, Coordinates p_coordinates) {
+    protected Aircraft (long p_id, String p_name, String p_type, Coordinates p_coordinates) {
         this.id = p_id;
         this.name = p_name;
         this.type = p_type;
         this.coordinates = p_coordinates;
+    }
+
+    public void updateConditions() {
     }
 
     public long getID() {
@@ -23,7 +26,7 @@ public class Aircraft extends Flayable {
         return this.name;
     }
     
-    public long getType() {
+    public String getType() {
         return this.type;
     }
 }

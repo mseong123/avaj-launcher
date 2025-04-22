@@ -1,5 +1,7 @@
 package com.simulator.aircraft;
 
+import com.simulator.Coordinates;
+
 // singleton and factory class
 
 public class AircraftFactory {
@@ -20,6 +22,8 @@ public class AircraftFactory {
             return new JetPlane(id++, p_name, p_type, p_coordinates);
         else if (p_type.equals("Helicopter")) 
             return new Helicopter(id++, p_name, p_type, p_coordinates);
-        // throw error here if type don't match
+        else 
+            throw new IllegalArgumentException(("Invalid aircraft type: " + p_type));
+        
     }
 }
