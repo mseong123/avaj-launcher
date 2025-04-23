@@ -31,7 +31,7 @@ public class Simulator {
             throw new WrongLengthArgumentException(); 
         }
 
-        try(BufferedReader reader = new BufferedReader(new FileReader("scenario.txt"));
+        try(BufferedReader reader = new BufferedReader(new FileReader(args[0]));
             FileWriter writer = new FileWriter("simulation.txt", true)) {
             String line;
             WeatherTower tower = new WeatherTower(writer);
