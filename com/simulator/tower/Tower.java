@@ -1,8 +1,7 @@
 package com.simulator.tower;
 
 import com.simulator.aircraft.*;
-import java.util.List;
-import java.util.ArrayList;
+import java.util.*;
 
 public class Tower {
     private List<Flyable> observers = new ArrayList<>();
@@ -15,12 +14,20 @@ public class Tower {
     }
 
     public void unregister(Flyable p_flyables) {
-        observers.removeIf(element -> ((Aircraft)element).getID() == ((Aircraft)p_flyables).getID());
+        List<Flyable> copy = new ArrayList<>(observers);
+        for (Flyable f: copy) {
+            if (((Aircraft)f).getID() == ((Aircraft) p_flyables).getID()) {
+                observers.remove(f);
+            }
+        }
         System.out.println("Tower says: " + ((Aircraft)p_flyables).getType() + "#" + ((Aircraft)p_flyables).getName()
-        + "(" + ((Aircraft)p_flyables).getID() + ") unregistered to from weather tower.");
+        + "(" + ((Aircraft)p_flyables).getID() + ") unregistered from weather tower.");
     }
 
     protected void conditionChanged() {
-        observers.forEach(element -> element.updateConditions());
+        List<Flyable> copy = new ArrayList<>(observers);
+        for (Flyable f: copy) {
+            f.updateConditions();
+        }
     }
 }

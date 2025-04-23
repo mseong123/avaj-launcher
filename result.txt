@@ -1,0 +1,263 @@
+Tower says: Baloon#B1(1) registered to weather tower.
+Tower says: Baloon#B2(2) registered to weather tower.
+Tower says: JetPlane#J1(3) registered to weather tower.
+Tower says: Helicopter#H1(4) registered to weather tower.
+Tower says: Helicopter#H2(5) registered to weather tower.
+Tower says: Helicopter#H3(6) registered to weather tower.
+Tower says: Baloon#B3(7) registered to weather tower.
+Tower says: JetPlane#J2(8) registered to weather tower.
+Tower says: Helicopter#H4(9) registered to weather tower.
+
+Simulation 1
+
+Baloon#B1(1): SUN!
+Baloon#B2(2): RAIN!
+JetPlane#J1(3): RAIN!
+Helicopter#H1(4): SUN!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+Baloon#B3(7): SUN!
+JetPlane#J2(8): RAIN!
+Helicopter#H4(9): SUN!
+
+Simulation 2
+
+Baloon#B1(1) SNOW!
+Baloon#B2(2): SUN!
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): RAIN!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+Baloon#B3(7) SNOW!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): RAIN!
+
+Simulation 3
+
+Baloon#B1(1) SNOW!
+Baloon#B1(1) landing.
+Tower says: Baloon#B1(1) unregistered from weather tower.
+Baloon#B2(2): RAIN!
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+Baloon#B3(7) SNOW!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): RAIN!
+
+Simulation 4
+
+Baloon#B2(2): SUN!
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+Baloon#B3(7) SNOW!
+Baloon#B3(7) landing.
+Tower says: Baloon#B3(7) unregistered from weather tower.
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 5
+
+Baloon#B2(2): RAIN!
+JetPlane#J1(3): SUN!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): SUN!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 6
+
+Baloon#B2(2): SUN!
+JetPlane#J1(3): RAIN!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5) SNOW!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 7
+
+Baloon#B2(2): RAIN!
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): RAIN!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): SUN!
+Helicopter#H4(9): FOG!
+
+Simulation 8
+
+Baloon#B2(2): SUN!
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 9
+
+Baloon#B2(2): RAIN!
+JetPlane#J1(3): SUN!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): SUN!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): SUN!
+
+Simulation 10
+
+Baloon#B2(2): SUN!
+JetPlane#J1(3): RAIN!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6) SNOW!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9) SNOW!
+
+Simulation 11
+
+Baloon#B2(2): RAIN!
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): SUN!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): RAIN!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): RAIN!
+
+Simulation 12
+
+Baloon#B2(2): SUN!
+JetPlane#J1(3): FOG!
+Helicopter#H1(4) SNOW!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): RAIN!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 13
+
+Baloon#B2(2) SNOW!
+JetPlane#J1(3): SUN!
+Helicopter#H1(4): RAIN!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): SUN!
+Helicopter#H4(9): FOG!
+
+Simulation 14
+
+Baloon#B2(2) SNOW!
+JetPlane#J1(3): RAIN!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): RAIN!
+Helicopter#H4(9): FOG!
+
+Simulation 15
+
+Baloon#B2(2) SNOW!
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 16
+
+Baloon#B2(2) SNOW!
+Baloon#B2(2) landing.
+Tower says: Baloon#B2(2) unregistered from weather tower.
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): SUN!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 17
+
+JetPlane#J1(3): SUN!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5) SNOW!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 18
+
+JetPlane#J1(3): RAIN!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): RAIN!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 19
+
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): SUN!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 20
+
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6) SNOW!
+JetPlane#J2(8): SUN!
+Helicopter#H4(9): SUN!
+
+Simulation 21
+
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): RAIN!
+JetPlane#J2(8): RAIN!
+Helicopter#H4(9) SNOW!
+
+Simulation 22
+
+JetPlane#J1(3): SUN!
+Helicopter#H1(4): FOG!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): RAIN!
+
+Simulation 23
+
+JetPlane#J1(3): RAIN!
+Helicopter#H1(4): SUN!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 24
+
+JetPlane#J1(3): FOG!
+Helicopter#H1(4) SNOW!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!
+
+Simulation 25
+
+JetPlane#J1(3): FOG!
+Helicopter#H1(4): RAIN!
+Helicopter#H2(5): FOG!
+Helicopter#H3(6): FOG!
+JetPlane#J2(8): FOG!
+Helicopter#H4(9): FOG!

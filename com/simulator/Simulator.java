@@ -13,6 +13,7 @@ public class Simulator {
         int simulationCount = 0;
         AircraftFactory factory = AircraftFactory.getInstance();
         WeatherTower tower = new WeatherTower();
+        String newline = System.lineSeparator();
 
         //error checking of args
         if (args.length != 1) {
@@ -35,7 +36,6 @@ public class Simulator {
                         );
                     aircraft.registerTower(tower);
                     tower.register(aircraft);
-
                 }
             }
         } catch (IOException e) {
@@ -48,9 +48,8 @@ public class Simulator {
         //run simulation
         for (int i = 0; i < simulationCount; i++) {
             //single entry point
+            System.out.println(newline + "Simulation " + (i + 1) + newline);
             tower.changeWeather();
         }
-        
-
     }
 }

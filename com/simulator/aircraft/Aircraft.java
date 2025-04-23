@@ -29,4 +29,8 @@ public class Aircraft extends Flyable {
     public String getType() {
         return this.type;
     }
+
+    public Coordinates getCoordinates() {
+        return this.coordinates;
+    }
 }
