@@ -8,7 +8,7 @@ public class JetPlane extends Aircraft {
     }
     public void updateConditions() {
         //error here, need to register tower first
-        String weather = this.tower.getWeather(this.coordinates);
+        String weather = this.weatherTower.getWeather(this.coordinates);
         if (weather == "SUN") {
             this.coordinates.setLatitude(10);
             this.coordinates.setHeight(2);
@@ -28,7 +28,7 @@ public class JetPlane extends Aircraft {
         }
         if (this.coordinates.getHeight() == 0) {
             System.out.println(this.type + "#" + this.name + "(" + this.id + ") landing.");
-            this.tower.unregister(this);
+            this.weatherTower.unregister(this);
         }
     }
 

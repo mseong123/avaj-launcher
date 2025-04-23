@@ -39,10 +39,10 @@ public class Simulator {
                 }
             }
         } catch (IOException e) {
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
             System.exit(1);
         } catch (Exception e) {
-            System.err.println("Some other error occured: " + e.getMessage());
+            System.out.println("Some other error occured: " + e.getMessage());
             System.exit(1);
         }
         //run simulation
