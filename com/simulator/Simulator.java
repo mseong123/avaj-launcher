@@ -8,6 +8,18 @@ import java.io.IOException;
 import com.simulator.aircraft.*;
 import com.simulator.tower.WeatherTower;
 
+class CustomIllegalArgumentException extends IllegalArgumentException {
+    public String getMessage() {
+        return new String("Type has to be Baloon, JetPlane or Helicopter only.");
+    }
+}
+
+class WrongLengthArgumentException extends IllegalArgumentException {
+    public String getMessage() {
+        return new String("Length of program argument has to be 1.");
+    }
+}
+
 public class Simulator {
     public static void main(String[] args) {
         int simulationCount = 0;
@@ -16,7 +28,7 @@ public class Simulator {
         
         //error checking of args
         if (args.length != 1) {
-            throw new IllegalArgumentException(); 
+            throw new WrongLengthArgumentException(); 
         }
 
         try(BufferedReader reader = new BufferedReader(new FileReader("scenario.txt"));
@@ -30,6 +42,11 @@ public class Simulator {
                     simulationCount = Integer.parseInt(line);
                 else {
                     String[] splitLine = line.split("[\\s]");
+                    if (!splitLine[0].equals("Baloon")
+                        && !splitLine[0].equals("JetPlane")
+                        && !splitLine[0].equals("Helicopter")) {
+                        throw new CustomIllegalArgumentException();
+                    }
                     Flyable aircraft = factory.newAirCraft(
                         splitLine[0], 
                         splitLine[1], 

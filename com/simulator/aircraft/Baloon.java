@@ -29,7 +29,7 @@ public class Baloon extends Aircraft {
         }
         else if (weather == "SNOW") {
             this.coordinates.setHeight(-15);
-            writer.append(this.type + "#" + this.name + "(" + this.id + ") SNOW!" + newline);
+            writer.append(this.type + "#" + this.name + "(" + this.id + "): SNOW!" + newline);
         }
         if (this.coordinates.getHeight() == 0) {
             writer.append(this.type + "#" + this.name + "(" + this.id + ") landing." + newline);
