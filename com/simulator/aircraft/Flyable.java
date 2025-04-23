@@ -1,6 +1,7 @@
 package com.simulator.aircraft;
 
 import com.simulator.tower.WeatherTower;
+import java.io.IOException;
 
 public abstract class Flyable {
     protected WeatherTower weatherTower;
@@ -9,5 +10,5 @@ public abstract class Flyable {
         weatherTower = p_tower;
     }
 
-    public abstract void updateConditions();
+    public abstract void updateConditions() throws IOException;
 }
