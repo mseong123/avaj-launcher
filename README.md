@@ -1,6 +1,6 @@
 # avaj-launcher | 42KL
 
-![UML](https://github.com/mseong123/avaj-launcher/blob/main/images/uml_diagram.png)
+![UML](https://github.com/mseong123/avaj-launcher/blob/main/uml_diagram.png)
 *UML class diagram of aircraft simulator
 
 This project's objective delves into the domain of neuroscience where we have to parse, filter, preprocess EEG data and train a brain computer interface (BCI) program using the data. A BCI is a 
